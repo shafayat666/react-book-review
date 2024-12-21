@@ -20,7 +20,7 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink
-            to="/about"
+            to="/listed-books"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-600 border-b-2 border-blue-600"
@@ -30,7 +30,7 @@ const Header = () => {
             Listed Books
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/pages-to-read"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-600 border-b-2 border-blue-600"

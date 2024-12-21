@@ -2,6 +2,7 @@ import { Outlet, useLoaderData } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { createContext } from "react";
+import { Bounce, ToastContainer } from "react-toastify";
 
 export const LevelContext = createContext(1)
 
@@ -17,6 +18,19 @@ const Root = () => {
         </LevelContext.Provider>
       </div>
       <Footer />
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
     </div>
   );
 };

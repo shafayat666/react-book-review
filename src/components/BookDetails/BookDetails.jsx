@@ -1,4 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBook } from "../../utility/localstorage.jsx";
+import { toast } from "react-toastify";
+import { useState } from "react";
+
 
 const BookDetails = () => {
   const books = useLoaderData();
@@ -6,6 +10,26 @@ const BookDetails = () => {
   const id = parseInt(bookId);
   const book = books.find(book => book.bookId === id);
   const { bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
+
+  const [clicked, setClicked] = useState(false);
+  const [read, setRead] = useState(false)
+
+  const handleClick = (buttonId) => {
+    if (buttonId === 0 && !read) {
+      toast.success("Successfully added to Reading list")
+      saveBook(id, buttonId);
+      setClicked(true)
+      setRead(true)  
+    } else if (buttonId === 1 && !read) {
+      toast.success("Succesfully added to Wishlist")
+      saveBook(id, buttonId);
+      setClicked(true)
+    } else if (read) {
+      toast.warn("You've already read this book.")
+    } else if (clicked) {
+      toast.warn("You've already added this book to the list.")
+    }
+  }
 
   return (
     <div className="max-w-7xl mx-auto p-6">
@@ -49,10 +73,10 @@ const BookDetails = () => {
 
           {/* Buttons */}
           <div className="mt-6 flex space-x-4">
-            <button className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition">
+            <button onClick={() => handleClick(0)} className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition">
               Read
             </button>
-            <button className="bg-gray-300 text-gray-700 py-2 px-6 rounded-lg hover:bg-gray-400 transition">
+            <button onClick={() => handleClick(1)} className="bg-gray-300 text-gray-700 py-2 px-6 rounded-lg hover:bg-gray-400 transition">
               Wishlist
             </button>
           </div>
