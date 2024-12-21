@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Active link style */
+/* Default style for all links */
+a {
+  text-decoration: none;
+  color: #333; /* Default text color */
+  font-size: 16px;
+  padding: 8px 12px;
+  border: 2px solid transparent; /* Default no border */
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Active link style */
+.active {
+  color: #007bff; /* Active text color */
+  border-color: #007bff; /* Highlight border */
+  font-weight: bold; /* Make the active link bold */
+  border-radius: 4px; /* Add rounded corners */
+}
+
+/* Pending link style (if applicable) */
+.pending {
+  color: gray; /* Text color for pending state */
+  border-color: gray; /* Gray border for pending */
+  font-style: italic; /* Italicize the link */
+  opacity: 0.7; /* Slightly fade the link */
+}
+
+/* Hover effect for all links */
+a:hover {
+  color: #0056b3; /* Hover text color */
+  border-color: #0056b3; /* Change border on hover */
+}
+
+

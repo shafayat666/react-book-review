@@ -4,10 +4,12 @@ import Footer from "../Footer/Footer";
 
 const Root = () => {
   return (
-    <div>
-      <Header />
-      <Outlet />
-      <Footer />      
+    <div className="w-11/12 mx-auto flex flex-col min-h-screen">
+      <div className="flex-grow">
+        <Header />
+        <Outlet />
+      </div>
+      <Footer />
     </div>
   );
 };
