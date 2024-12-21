@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "image": "../src/assets/images/the-silent-patient.jpg",
+    "review": "A gripping psychological thriller that keeps you on the edge of your seat. The twists and turns will leave you questioning everything.",
+    "totalPages": 368,
+    "rating": 4.5,
+    "category": "Thriller",
+    "tags": ["Psychological", "Suspense", "Mystery"],
+    "publisher": "Celadon Books",
+    "yearOfPublishing": 2019
+  },
+  {
+    "bookId": 2,
+    "bookName": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "image": "../src/assets/images/where-the-crawdads-sing.jpg",
+    "review": "A beautiful and haunting story of loneliness, love, and survival in the wilds of North Carolina. A must-read for fans of literary fiction.",
+    "totalPages": 384,
+    "rating": 4.8,
+    "category": "Drama",
+    "tags": ["Nature", "Romance", "Murder Mystery"],
+    "publisher": "G.P. Putnam's Sons",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 3,
+    "bookName": "The Midnight Library",
+    "author": "Matt Haig",
+    "image": "../src/assets/images/the-midnight-library.jpg",
+    "review": "A thought-provoking story about regrets and the infinite possibilities of life. The characters are deeply relatable, and the premise is fascinating.",
+    "totalPages": 304,
+    "rating": 4.3,
+    "category": "Fantasy",
+    "tags": ["Fantasy", "Self-help", "Philosophical"],
+    "publisher": "Viking",
+    "yearOfPublishing": 2020
+  },
+  {
+    "bookId": 4,
+    "bookName": "Educated",
+    "author": "Tara Westover",
+    "image": "../src/assets/images/educated.jpg",
+    "review": "An inspiring memoir of a woman who grows up in a strict and abusive household, eventually finding a path to education and self-discovery.",
+    "totalPages": 352,
+    "rating": 4.7,
+    "category": "Memoir",
+    "tags": ["Memoir", "Inspiration", "Survival"],
+    "publisher": "Random House",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 5,
+    "bookName": "Atomic Habits",
+    "author": "James Clear",
+    "image": "../src/assets/images/atomic-habits.jpg",
+    "review": "A practical guide to building good habits and breaking bad ones. Clear offers actionable advice supported by scientific research.",
+    "totalPages": 320,
+    "rating": 4.9,
+    "category": "Self-Help",
+    "tags": ["Productivity", "Habits", "Psychology"],
+    "publisher": "Avery",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Book Thief",
+    "author": "Markus Zusak",
+    "image": "../src/assets/images/the-book-thief.jpg",
+    "review": "A moving story set in Nazi Germany, narrated by Death. A tale of love, loss, and the power of words.",
+    "totalPages": 560,
+    "rating": 4.6,
+    "category": "Historical Fiction",
+    "tags": ["War", "Historical", "Young Adult"],
+    "publisher": "Knopf",
+    "yearOfPublishing": 2005
+  }
+]
